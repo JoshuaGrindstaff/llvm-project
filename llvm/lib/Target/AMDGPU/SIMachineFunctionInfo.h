@@ -947,6 +947,10 @@ public:
   unsigned getMaxWavesPerEU() const {
     return WavesPerEU.second;
   }
+  // Set min and max waves per execution unit (A way to limit occupancy)
+  void setWavesPerEU(unsigned MinWaves, unsigned MaxWaves) {
+    WavesPerEU = {MinWaves,MaxWaves};
+  }
 
   /// \returns SGPR used for \p Dim's work group ID.
   Register getWorkGroupIDSGPR(unsigned Dim) const {
