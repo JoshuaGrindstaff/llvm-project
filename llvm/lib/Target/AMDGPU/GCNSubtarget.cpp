@@ -10,6 +10,7 @@
 /// Implements the GCN specific subclass of TargetSubtarget.
 //  change1
 //  change3
+//  change2
 //===----------------------------------------------------------------------===//
 
 #include "GCNSubtarget.h"
